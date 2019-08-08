@@ -1268,9 +1268,9 @@ input, select, textarea {
 				content: '';
 				display: block;
 				position: absolute;
-				top: calc(-300.5rem - 1px);/*top: calc(-3.5rem - 1px); --> replace this line if stuff goes wrong*/
+				top: calc(-3.5rem - 1px);/*top: calc(-3.5rem - 1px); --> replace this line if stuff goes wrong*/
 				left: calc(50% - 1px);
-				width: 1px;
+				width: 0px;
 				height: calc(3.5rem + 1px);
 				background: #ffffff;
 			}
