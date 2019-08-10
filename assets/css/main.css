@@ -1137,7 +1137,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
+			background-size: cover;
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
 			z-index: 2;
@@ -1156,7 +1156,7 @@ input, select, textarea {
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			z-index: 1;
+			z-index: 3;
 		}
 
 		body.is-article-visible #bg:after {
@@ -1538,9 +1538,9 @@ input, select, textarea {
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 40rem;/**for width of the sub-pages**/
+			width: 100%;/**for width of the sub-pages**/
 			max-width: 100%;
-			background-color: rgba(255, 255, 255, .05);
+			background-color: rgba(0, 0, 0, 1);/**color of sub-pages**/
 			border-radius: 4px;
 			opacity: 0;
 		}
