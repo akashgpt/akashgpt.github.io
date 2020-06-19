@@ -141,7 +141,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #ffffff;/*changing all #ffffff, i.e. 'white' to F5F5F5*/
+		color: #dddddd;/*changing all #ffffff, i.e. 'white' to F5F5F5*/
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
@@ -163,7 +163,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #dddddd;
 		font-weight: 600;
 	}
 
@@ -176,7 +176,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #dddddd;
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
@@ -190,7 +190,7 @@ input, select, textarea {
 		}
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			border-bottom: solid 1px #ffffff;
+			border-bottom: solid 1px #dddddd;
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
@@ -616,6 +616,7 @@ input, select, textarea {
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
+			display: inline-block;
 			font-style: normal;
 			font-variant: normal;
 			text-rendering: auto;
@@ -1167,8 +1168,8 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: cover;
+			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/overlay.png");
+			background-size: auto, 256px 256px;/*before it was 'cover' now 'auto, 256px 256px'*/
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
 			z-index: 2;
@@ -1187,7 +1188,8 @@ input, select, textarea {
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			z-index: 3;
+			z-index: 3;/* specifies the order in which things appear. with '1' bg appears later*/
+			opacity: 0.75/*recently added*/
 		}
 
 		body.is-article-visible #bg:after {
