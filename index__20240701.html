@@ -1,0 +1,763 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	This is a modified version by Akash Gupta for www.akashgpt.com
+-->
+<html>
+	<head>
+		<!-- <link rel="icon" type="image/x-icon" href="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBhdGggc3R5bGU9ImZpbGw6IzVBOEJCMDsiIGQ9Ik0zMzYsOTZjLTQzLjEwNiwwLTgyLjU4NCwxNS41MDQtMTEzLjE4NCw0MS4yM2MyNS45My01OC45NjYsODMuMjY3LTEwMS4wMDIsMTUwLjgzNy0xMDQuOTE4ICBDMzQ0Ljk0NCwxMS45NjMsMzA5Ljg2OSwwLDI3MiwwQzE3NC43OTQsMCw5Niw3OC43OTgsOTYsMTc2YzAsNDMuMTA2LDE1LjUwNCw4Mi41ODQsNDEuMjMsMTEzLjE4NCAgQzc4LjI2MiwyNjMuMjUzLDM2LjIyOSwyMDUuOTE3LDMyLjMxLDEzOC4zNDZDMTEuOTYzLDE2Ny4wNTYsMCwyMDIuMTMsMCwyNDBjMCw5Ny4yMDYsNzguNzk4LDE3NiwxNzYsMTc2ICBjNDMuMTA2LDAsODIuNTg0LTE1LjUwNCwxMTMuMTg0LTQxLjIzYy0yNS45Myw1OC45NjgtODMuMjY2LDEwMS4wMDItMTUwLjgzOCwxMDQuOTE4QzE2Ny4wNTYsNTAwLjAzNywyMDIuMTMsNTEyLDI0MCw1MTIgIGM5Ny4yMDYsMCwxNzYtNzguNzk4LDE3Ni0xNzZjMC00My4xMDYtMTUuNTA0LTgyLjU4NC00MS4yMy0xMTMuMTg0YzU4Ljk2OCwyNS45MzEsMTAxLjAwMiw4My4yNjcsMTA0LjkxOCwxNTAuODM4ICBDNTAwLjAzNywzNDQuOTQ0LDUxMiwzMDkuODcsNTEyLDI3MkM1MTIsMTc0Ljc5NCw0MzMuMjAyLDk2LDMzNiw5NnogTTIzNS4xNDksMzAxLjkxN2MtMTIuNTkyLTE5LjkxNC0yMS4zMS00Mi41MTgtMjUuMDY2LTY2Ljc2OCAgYzE5LjkxNC0xMi41OTIsNDIuNTE4LTIxLjMxLDY2Ljc2OC0yNS4wNjZjMTIuNTkyLDE5LjkxNCwyMS4zMSw0Mi41MTgsMjUuMDY2LDY2Ljc2OCAgQzI4Mi4wMDMsMjg5LjQ0MywyNTkuMzk4LDI5OC4xNjMsMjM1LjE0OSwzMDEuOTE3eiIvPgo8Zz4KCTxwYXRoIHN0eWxlPSJmaWxsOiMzQzVENzY7IiBkPSJNMjU2LDg3LjIyN2MyOS44NzctMzEuNjUzLDcxLjM2Mi01Mi4yMzQsMTE3LjY1My01NC45MTVDMzQ0Ljk0NCwxMS45NjMsMzA5Ljg2OSwwLDI3MiwwICAgYy01LjM5NSwwLTEwLjczLDAuMjU2LTE2LDAuNzMxVjg3LjIyN3oiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiMzQzVENzY7IiBkPSJNMzM2LDk2Yy0yOC44MTEsMC01NS45OTcsNi45MzQtODAsMTkuMjExdjk5LjQzNGM2Ljc5NC0xLjkyNSwxMy43NS0zLjQ2MSwyMC44NTEtNC41NiAgIGMxMi41OTIsMTkuOTE0LDIxLjMxLDQyLjUxOCwyNS4wNjYsNjYuNzY4Yy0xNC4wODIsOC45MDYtMjkuNTE0LDE1Ljg2MS00NS45MTcsMjAuNTA2djk5LjQzMiAgIGMxMS45MDktNi4wOSwyMy4wMzctMTMuNDg4LDMzLjE4NC0yMi4wMTljLTguMTY2LDE4LjU2OC0xOS40NTEsMzUuNDU0LTMzLjE4NCw1MC4wMDN2ODYuNDk2Yzg5LjcwNi04LjA4NiwxNjAtODMuNDYyLDE2MC0xNzUuMjY5ICAgYzAtNDMuMTA2LTE1LjUwNC04Mi41ODQtNDEuMjMtMTEzLjE4NGM1OC45NjgsMjUuOTMxLDEwMS4wMDIsODMuMjY3LDEwNC45MTgsMTUwLjgzOEM1MDAuMDM3LDM0NC45NDQsNTEyLDMwOS44Nyw1MTIsMjcyICAgQzUxMiwxNzQuNzk0LDQzMy4yMDIsOTYsMzM2LDk2eiIvPgo8L2c+CjxjaXJjbGUgc3R5bGU9ImZpbGw6IzFFMkUzQjsiIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjU2Ii8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /> -->
+		<link rel="icon" type="image/png" href="images/black-hole.png"/>
+		<title>Akash Gupta</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<p></p><br/><br/><br/> <!--remove this line if stuff goes wrong-->
+					<header id="header">
+					<!--<div class="logo">
+							<span class="icon fa-eercast"></span>
+							<!wpexplorer, rocket, space-shuttle, user-circle, grav, id-badge, id-card><br/>Future Investigators in NASA Earth and Space Science and Technology Grant Recipient
+						</div>-->
+						<div class="content">
+							<div class="inner">
+								<h1>Akash Gupta</h1>
+								<p style="font-size:75%">Astrophysicist | Planetary Scientist<br/>
+								 </p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#about">About Me</a></li>
+								<li><a href="#research">Research</a></li>
+								<!-- <li><a href="https://drive.google.com/file/d/1Cip7yMkG6F5hVQcTSudI889ne_pUpIbJ/view?usp=sharing">CV</a></li> -->
+																<li><a href="https://akashgpt.com/documents/Akash_Gupta__CV.pdf">CV</a></li>
+								<li><a href="#contact">Contact</a></li>	
+								<li><a href="#publications">Publications</a></li>
+								<!-- <li><a href="#publications">Outreach</a></li> -->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<style>
+						.right {
+							float: right;
+							width: 300px;
+							border: 3px solid #73AD21;
+							padding: 10px;
+						  }
+						  </style>
+						<!-- About Me -->
+							<article id="about">
+								<center><h2 class="major">About Me</h2></center>
+																<!-- <center class="image main"><img src="images/self_pic.png" alt="This is me!" style="width:200px;height:200px;" /></center> -->
+																<center class="image main" Hi! Thank you for visiting my webpage.><img src="images/self_pic_5.webp" alt="This is me!" style="width:35%;" /></center>
+
+																
+								<section>
+								<p style="font-size:100%">
+								
+								Hi! Thank you for visiting my webpage.<br/><br/>
+								
+								I'm an <b>Astrophysicist</b> / <b>Planetary Scientist</b> at the <b><a href="https://www.princeton.edu/">Princeton University</a></b>. I have a joint appointment at the
+								<b>Department of <a href="https://web.astro.princeton.edu/">Astrophysical Sciences</a></b> and <b>Department of <a href="https://geosciences.princeton.edu/"></a>Geosciences</a></b> as a 
+								 <b><a href="https://www.hsfoundation.org/programs/science/51-pegasi-b-fellowship/">51 Pegasi b Fellow</a>, <a href="https://geosciences.princeton.edu/research/hessfellowship">Harry H. Hess Postdoctoral Fellow</a> and <a href="https://futurefaculty.princeton.edu/">Future Faculty in Physical Sciences Fellow</a></b>. 
+								 
+								<br/><br/>								
+
+									
+								I am interested in <b>understanding the processes that dictate how planets form and evolve and how this ultimately leads to an environment and ingredients suitable for life</b>. 
+								 Specifically, my research entails the following topics: planet formation and evolution; atmospheric escape; radiative hydrodynamics; atmosphere-interior interactions; ab initio molecular dynamics; planetary dynamics and celestial mechanics; and planetary habitability.
+								 Please visit the 'Research' or 'Publications' section to learn more about my research. 
+
+								<!-- An understanding of such interactions is, in turn, critical for understanding how planets evolve at a larger-scale and longer time scales.  -->
+
+								<br/><br/>								
+
+								
+								Previously, I received a Ph.D. in Planetary Sciences at the University of California, Los Angeles in 2023 under the supervision of Prof. <b><a href="https://epss.ucla.edu/people/faculty/833/">Hilke Schlichting</a></b>.
+								In 2020, I was <b>awarded</b> the three-year <b>Future Investigators in NASA Earth and Space Science and Technology</b> (FINESST) grant.
+								In addition to my work with Prof. Schlichting, I also worked on several projects with Profs. <b><a href="https://epss.ucla.edu/people/faculty/913/">Lars Stixrude</a></b> (UCLA) 
+									and <b><a href="https://epss.ucla.edu/people/faculty/585/">Edward Young</a></b> (UCLA), and collaborated on some with
+								Profs. <b><a href="https://www.imperial.ac.uk/people/james.owen">James Owen</a></b> (Imperial College of London, UK) 
+								and <b><a href="https://www.erikpetigura.com/">Erik Petigura</a></b> (UCLA) and James Rogers (Imperial College of London), Dakotah Tyler (UCLA) and others.
+								
+								
+							  <br/><br/>								
+
+								
+								Before moving to UCLA, in 2016, I graduated from the <b>Indian Institute of Technology (IIT), Kanpur</a></b>,
+								with a Bachelor's and Master's (Dual Degree) in Aerospace Engineering. For my Master's thesis, I explored the dynamics of rings around non-spherical, minor planets 
+								such as Chariklo with Prof. <b><a href="https://www.iitk.ac.in/new/ishan-sharma">Ishan Sharma</a></b> and Dr. <b>Sharvari Nadkarni-Ghosh</b>.
+								In addition, I worked on projects encompassing a wide range of other topics such as orbital mechanics, N-body simulations, kinetic/granular theory and designing & building Formula-One prototype cars.
+												
+								</br></br>
+
+
+								<!-- Outside research, I love to explore the food scene in LA, to read/listen to all sorts of books, 
+								going for climbing or other sports, and of course, enjoying movies, music and exploring new places. -->
+								
+								<!-- </br></br> -->
+						
+								For more details, please see my CV or visit the 'Contact' section to know how we could get in touch.
+								
+						
+								<br/><br/>
+								
+								<!-- In addition, I worked as a Research Assistant at IIT Kanpur during 2016-17 on the dynamics of rings around minor-planets and kinetic theory of planetary rings.  -->
+								<!-- In the Summer of 2015, I worked on the dynamics of Saturn's F-ring with <b><a href="https://www.researchgate.net/profile/Heikki_Salo">Prof. Heikki Salo</a></b> at the University of Oulu, Finland.<br/><br/> -->
+<!-- </br> -->
+								<!-- <nav> -->
+							<!-- <ul class="actions"> -->
+								<!-- <li><a href="#" class="button">Back</a></li> -->
+							<!-- </ul> -->
+						<!-- </nav> -->
+								<!-- <center class="image main"><img src="images/space_4.jpg" alt="Jupiter from Juno" style="width:100%;" /></center> -->
+
+								<nav>
+							<ul class="actions">
+								<li><a href="#" class="button">Back</a></li>
+								<li><a href="#research" class="button">Research</a></li>
+								<li><a href="https://akashgpt.com/documents/Akash_Gupta__CV.pdf" class="button">CV</a></li>
+								<li><a href="#contact" class="button">Contact</a></li>
+								<li><a href="#publications" class="button">Publications</a></li>
+
+							</ul>
+						</nav>
+
+								</section>
+
+							</article>
+
+							
+						<!-- Research -->
+							<article id="research">
+								
+								<center><h2 class="major">Research</h2></center>
+								
+								<center class="image main"><img src="images/space_6.webp" alt="Horizon"  style="width:100%;" /></center>
+																
+								My research lies at the intersection of astrophysics, planetary geosciences and chemistry and explores how Earth-like 
+								extrasolar planets (or exoplanets) form from gas and dust and evolve over billions of years. 
+								In particular, I am interested in understanding the fundamental physical and chemical processes that dictate a planet's formation and subsequent evolution. 
+								My work involves building mathematical models that encapsulate such physical or chemical processes and are motivated by the observations of the 
+								thousands of planets we know today. In addition, I use quantum mechanics to perform computational experiments to understand how the primary building 
+								blocks of such planets interact with each other. This is motivated by the far-reaching consequences of such interactions on the formation, evolution, 
+								and structure of planets but a lack of experimental data due to extreme environments in which these building blocks interact. 
+								
+								<br><br>
+
+								Below, I list my current and past research projects. For an up-to-date record of my research, please see my curriculum vitae.
+								
+								<br><br>
+								
+								<ul>
+									<h4 class="minor">Current projects</h4>
+									<li>Origin of super-Earths and sub-Neptunes: understanding the radius valley as a by-product of planet formation
+										<li>Investigating the interaction between planetary building blocks using <i>ab-initio</i> molecular dynamics
+											<li>Understanding the geochemical evolution of planets</br>
+									<!-- <p style="font-size:90%">
+										-- Origin of supear-Earths and sub-Neptunes: Understanding the radius valley as a by-product of planet formation</br>
+										-- Understanding the physical and chemical evolution of early Moon
+										</p> -->
+										</li>
+
+<br>
+<br>
+
+
+										<h4 class="minor">Past projects</h4>
+									<li> Dynamics and impacts: exploring the observed asymmetry in the distribution of Lunar cold-spots
+									<li> Dynamics of planetary rings: minor planets and Saturn
+									</br>
+
+										<!-- <p style="font-size:90%">
+										-- Rings around small, non-spherical planetary bodies</br>
+										-- Saturn's F-ring: dynamics under continual formation and disruption of aggregates
+										</p>
+										</li>
+									<li><i>Dynamics, impacts and craters</i></br>
+										<p style="font-size:90%">
+										-- Investigating the observed asymmetry in the distribution of Lunar cold-spots
+									</p>
+									</li>
+									<li><i>Other major projects</i></br>
+										<p style="font-size:90%">
+										-- Adaptively optimized trajectories for rendezvous with an asteroid</br>
+										-- Formula SAE, Italy'13 by SAE International (IITK Motorsports)
+										</p>
+									</li> -->
+								</ul>
+
+								<!-- <br> -->
+								Below, I give an overview of my current (those published) and past projects that I have led or where I made substantial contributions.
+
+
+								<ul class="alt">
+								</p>
+								</br>
+								
+								
+								<li><h3 class="inner">Origin of super-Earths and sub-Neptunes: Understanding the radius valley as a by-product of planet formation under the core-powered mass-loss mechanism</h3>
+										
+										
+										</br>
+										<div class="model-box">
+										<!-- <center><iframe class="model"  src="https://www.youtube-nocookie.com/embed/73_QE7egfUw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+										<center><iframe class="model" width="560" height="315"   src="https://www.youtube.com/embed/73_QE7egfUw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<figcaption style="font-size:75%"></br>A video explaining how the radius valley	can be understood as a by-product of planet formation under the core-powered mass-loss mechanism. Credits: Emilie Eshbaugh (UCLA undergraduate student) and Hilke Schlichting.</a></a></figcaption></center>
+										</div>
+										</br>
+										</br>
+										</br>
+										
+										<!--
+										<center class="image main"><img src="images/exoplanet.jpg" alt="exoplanet concept" style="width:40%;" />
+										<figcaption style="font-size:75%"></br>Blue and Bizarre. Artist's impression of the exoplanet HD 189733b. Image credit: <a https://exoplanets.nasa.gov/resources/137/blue-and-bizarre/> NASA, ESA, M. Kornmesser.</a></figcaption></center>
+										-->
+										<p style="font-size:90%">
+										The video above by Emilie Eshbaugh (UCLA) gives a great introduction to this project. If you prefer a textual summary and would like further details, please read below or refer the papers listed at the end of this section.
+										</br>
+										</br>
+										Till 1995, we only knew about the eight planets in our Solar system. Since, we have discovered thousands of planets in our galaxy orbiting other stars, i.e. <a href="https://exoplanets.nasa.gov/what-is-an-exoplanet/about-exoplanets/">exoplanets</a> 
+										(4031 as of Aug 1 2019; see <a href="https://exoplanetarchive.ipac.caltech.edu/">NASA Exoplanet Archive</a>). These discoveries have revolutionized the field 
+										of exoplanetary science and offer new insights into the formation and evolution of planets.
+										</br>
+										</br>						
+										One of the key findings from recent observations has been that the abundant planets in our galactic neighborhood, to-date, are 1 to 4 Earth radii in size, i.e. larger than Earth and smaller than Neptune. 
+										Intriguingly, further observations have revealed that there is a lack of planets of sizes 1.5 - 2.0 Earth radii, i.e. a radius 'valley', in 
+										the size distribution of such small, short-period (<100 days) exoplanets. Moreover, a transition in planet density has been noted around 
+										~1.6 Earth radii, with smaller planets having higher bulk densities, consistent with rocky Earth-like compositions while 
+										larger planets having lower bulk densities, suggesting that these planets are engulfed in H/He atmospheres. 
+										It has thus been suggested that this valley likely marks a transition regime between smaller rocky  planets, i.e.
+										'super-Earths' to larger planets with significant atmospheres, i.e. 'sub-Neptunes'.
+										
+										
+										<center class="image main"><img src="images/CPML_obs0.webp" alt="Observed planet size distribution" style="width:40%;" />
+										<figcaption style="font-size:75%"></br>Radius valley in the distribution of small, close-in planets separating populations of super-Earths and sub-Neptunes. 
+										Plot based on data from <a href="http://adsabs.harvard.edu/abs/2017AJ....154..109F">Fulton et al. 2017</a>.</figcaption></center>
+										
+										<p style="font-size:90%">
+										Typically, atmospheric erosion due to high-energy radiation from the host stars, i.e. photoevaporation, is suggested as an explanation to these observations. 
+										Recently, however, Ginzburg et al. 2018 and my advisor and I (Gupta & Schlichting 2019, 2020) have demonstrated that atmospheric loss due to a planet's own cooling luminosity, i.e. core-powered mass-loss,
+										can also explain the observed radius valley, even without photoevaporation. 
+										Furthermore, we have demonstrated that planetary evolution under this mechanism can explain a multitude of trends observed in the planet size distribution 
+										with orbital period, insolation flux and stellar mass, metallicity, age (Gupta & Schlichting, 2020).
+
+										<center class="image main"><img src="images/CPML_4_100_3.webp" alt="Figure 1, Gupta & Schlichting 2019, MNRAS" style="width:100%;" />
+										<figcaption style="font-size:75%"></br>Schematic demonstrating how the core-powered mass-loss mechanism results in super-Earths and sub-Neptunes and thus the radius valley. See <a href="http://adsabs.harvard.edu/abs/2019MNRAS.487...24G">Gupta & Schlichting, 2019</a> for details.</figcaption></center>
+
+										<p style="font-size:90%">
+										It is likely that the observed planet distribution was not just sculpted by core-powered mass-loss and photoevaporation, but by a multitude of processes over their lifetime such as giant impacts or different planet formation pathways (icy planets, formation in gas depleted disks or after dispersal of gas disks). Nevertheless,
+										our work shows that the valley in the size distribution of exoplanets is an inevitable by-product of the planetary formation process, i.e. through the core-powered mass-loss mechanism. 
+										
+										<!-- In a nutshell, with Dr. Hilke Schlichting and Will Misener at UCLA -->
+										<!-- and our collaborators, I have been trying to investigate if the origin of the radius valley and populations of super-Earths and sub-Neptunes can be understood as -->
+										<!-- a by-product of planet formation under the core-powered mass-loss mechanism. style="width:50%"-->
+										</br>
+										</br>
+										<p style="font-size:90%">
+										To know more, please refer:
+										</br>
+										<span>&emsp;</span><span>&#9900;</span><span>&emsp;</span> <b>A. Gupta</b>, L. Nicholson & H.E. Schlichting, 2022. [<b><a href="https://ui.adsabs.harvard.edu/abs/2022arXiv220514020G/abstract">ADS</a></b>]</br>
+										<span>&emsp;</span><span>&#9900;</span><span>&emsp;</span> J. Rogers, <b>A. Gupta</b>, J. Owen & H.E. Schlichting, 2021. [<b><a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.5886R/abstract">ADS</a></b>]</br>
+										<span>&emsp;</span><span>&#9900;</span><span>&emsp;</span> <b>A. Gupta</b> & H.E. Schlichting, 2021. [<b><a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.504.4634G/abstract">ADS</a></b>]</br>
+										<span>&emsp;</span><span>&#9900;</span><span>&emsp;</span> <b>A. Gupta</b> & H.E. Schlichting, 2020. [<b><a href="https://ui.adsabs.harvard.edu/abs/2019rXiv190703732G/abstract">ADS</a></b>]</br>
+										<span>&emsp;</span><span>&#9900;</span><span>&emsp;</span> <b>A. Gupta</b> & H.E. Schlichting, 2019. [<b><a href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.487...24G/abstract">ADS</a></b>]</br>
+										<span>&emsp;</span><span>&#9900;</span><span>&emsp;</span> [<b><a href="https://akashgpt.com/#media">Recorded Conference Talk</a></b>]
+									</p>
+										
+										</li>
+									
+									
+									<li><h3 class="inner">Rings around small, non-spherical planetary bodies</h3>
+										<p> 
+										<!-- <center class="image main"><img src="images/Haumea.gif" alt="Haumea and its rings" style="width:50%;" />
+										<figcaption style="font-size:75%"></br>Artistic rendition of the triaxial shaped dwarf planet Haumea with its surrounding ring. 
+										Image credit: <a href="https://en.wikipedia.org/wiki/User:Tomruen"> Wikipedia user 'Tomruen'</a>.</figcaption></center> -->
+
+										<center><video style="width:50%;" autoplay loop muted>
+										<source src="images/Haumea2.mp4" type="video/mp4" />
+										Your browser does not support the video tag.
+										</video>
+										<figcaption style="font-size:75%"></br>Artistic rendition of the triaxial shaped dwarf planet Haumea with its surrounding ring. 
+											Image credit: <a href="https://en.wikipedia.org/wiki/User:Tomruen"> Wikipedia user 'Tomruen'</a>.</figcaption>
+									</center>
+										  
+</br>
+
+										<p style="font-size:90%">
+										For years, we have known of the rings around the giant planets of our Solar System.
+										Rings are also expected to exist around extrasolar planets but have not been detected so far. 
+										However, what was not expected was the existence of rings around much smaller, non-spherical bodies of our Solar System. 
+										This changed in 2014 with the discovery of rings around a small body named Chariklo, followed by another discovery in 2017, of rings around the dwarf planet, Haumea. 
+										These discoveries suggest that the ring systems are much more common in our Solar System than previously thought, 
+										and their existence has challenged our understanding of their evolution and formation. 
+										</br></br>
+										In collaboration with my former group
+										from IIT Kanpur (Prof. Ishan Sharma, Dr. Sharvari Nadkarni-Ghosh, Shri B. Bharath and others), I have been trying to understand the dynamics
+										of rings around non-spherical bodies through N-body simulations.
+										</br></br>
+										To know more, please refer:
+										</br>
+										<span>&emsp;</span><span>&#9900;</span><span>&emsp;</span> <b>A. Gupta</b>, S. Nadkarni-Ghosh & I. Sharma, 2018. <i>Icarus</i> 299, 97-116. [<b><a href="https://ui.adsabs.harvard.edu/abs/2018Icar..299...97G/abstract">ADS</a></b>]
+										</p>
+										</li>
+
+
+									<li><h3 class="inner">Investigating the observed asymmetry in the distribution of Lunar cold-spots</h3>
+										<center class="image main"><img src="images/lroc1.webp" alt="Moon" style="width:60%;" />
+										<figcaption style="font-size:75%"></br>The cratered surface of the moon. Image credit: <a href="https://lunar.gsfc.nasa.gov/">Lunar Reconnaissance Orbiter</a>.</figcaption></center>
+										
+										<p style="font-size:90%">
+										We have known for some time that our Moon has a spatial (longitudinal and latitudinal) asymmetry in the distribution of craters. 
+										This asymmetry is due to our Moon's synchronous motion around Earth and is also observed around other natural satellites like in the Galilean system. 
+										Since these observations, this problem has been investigated and explained using analytical, semi-empirical and numerical models.
+</br></br>
+										However, recent observations of the distribution of lunar 'cold-spot' craters by the Lunar Reconnaissance Orbiter (LRO) 
+										have revealed that their longitudinal asymmetry is higher than that previously observed. 
+										These 'cold-spot' craters are the recently formed lunar craters which show distinctly low night-time temperatures around 
+										them thus allowing them to be observed by LRO's thermal instruments. 
+										These are estimated to be a million years old or younger and to have sizes between ~ 50 - 2000 m -- much younger and smaller than the craters observed previously. 
+										Therefore, this discrepancy in the distribution of cold-spot craters raises questions, for example, 
+										about the assumptions and inferences made by the previous studies when investigating the older observations regarding the impactor size distribution
+										or the source of these craters. 
+										</br></br>
+										Through this project, we are trying to answer such questions. While I was leading this project in its earlier stages, it is currently being led by Sophia Turner who is a senior-year undergrad at UCLA.
+										</br>
+										</p>
+										</li>
+
+
+
+									<li><h3 class="inner">Saturn's F-ring: dynamics under continual formation and disruption of aggregates</h3>
+										<center class="image main"><img src="images/PIA12684_F_Ring_2.webp" alt="Saturn's F ring" style="width:100%;" />
+										<figcaption style="font-size:75%"></br>Cassini image shows Saturn's potato-shaped moon, Prometheus, dynamically and physically interacting with the F-ring.
+										Image credit: NASA/JPL/Space Science Institute.</figcaption></center>
+										
+										<p style="font-size:90%">
+										Saturn's F-ring is one of the most beautiful and dynamically active systems in our Solar system. 
+										This is due to the continual formation and disruption of aggregates in this ring which is because it is located near Saturn's Roche limit. 
+										Under Prof. Heikki Salo's (University of Oulu, FI) guidance, who is an expert on numerical simulations of planetary rings, 
+										I investigated the dynamics of this ring system using N-body simulations and also the mechanism of confinement in rings due to the shepherding satellites.
+										</li>
+										</p>
+									<li><h3 class="inner">Other Projects</h3>
+															<center class="image main"><img src="images/ISS_3.webp" alt="ISS" style="width:100%;" />
+															<figcaption style="font-size:75%"></br>ISS Composite Star Trail Image. 
+										Image credit: <a href="https://www.flickr.com/photos/nasacommons/40446827153/"> NASA on The Commons - flickr</a>.</figcaption></center>
+
+										<p style="font-size:90%"> 
+											<span>&emsp;</span><span>&#9900;</span><span>&emsp;</span> J. Owen et. al. (nine authors including <b>A. Gupta</b>). 2022. In review.
+											[<b><a href="https://ui.adsabs.harvard.edu/abs/2021arXiv211106094O/abstract">ADS</a></b>]<br>
+											<span>&emsp;</span><span>&#9900;</span><span>&emsp;</span> E. Estrela, M. Swain, <b>A. Gupta</b>, C. Sotin and A. Valio 2020. <i>ApJ</i>. 898, 104. 
+											[<b><a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...898..104E/abstract">ADS</a></b>]<br>
+											<span>&emsp;</span><span>&#9900;</span><span>&emsp;</span> Adaptively optimized trajectories for rendezvous with an asteroid</br>
+										</p>
+										</li>
+									</ul>
+								<nav>
+							<ul class="actions">
+								<li><a href="#" class="button">Back</a></li>
+							</ul>
+									
+						<!-- <center class="image main"><img src="images/PIA22949_hires.jpg" alt="Jupiter from Juno" style="width:10%;" /></center> -->
+						</nav>
+														<!-- <center style="font-size:60%"><font color="#8d8f90">Bottom Panel Image Credit: NASA/JPL-Caltech/SwRI/MSSS/Kevin M. Gill</font></center> -->
+								<center style="font-size:75%"><font color="#8d8f90">Top Panel: Earth's horizon and ESA Johannes Kepler ATV. 
+								Image Credit: <a href="https://www.flickr.com/photos/nasacommons/48097759802/">NASA on the Commons - flickr</a></font></center>
+
+							</article>
+
+							
+							
+							
+							
+							
+							
+						<!-- Contact -->
+						<!--
+								<article id="CV">
+								<h2 class="major">Curriculum Vitae</h2>								
+								
+								
+								<section>
+									<ul class="actions">
+										<li><a href="#" class="button primary">pdf</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="minor">Education</h3>
+									<div class="table-wrapper">
+										<table style="font-size:75%">
+											<tbody>
+												<tr>
+													<td>University of California, Los Angeles (UCLA)</td>
+													<td>Planetary Science</td>
+													<td>Ph.D.</td>
+													<td>2017 - Present</td>
+												</tr>
+																								<tr>
+													<td></td>
+													<td></td>
+													<td>M.S.</td>
+													<td>2017 - 2019</td>
+												</tr>
+												<tr>
+													<td>Indian Institute of Technology, Kanpur (IIT Kanpur)</td>
+													<td>Aerospace Engineering <br/>
+													<i>Master's Thesis</i>: Simulations of rings around ellipsoidal bodies</td>
+													<td>Bachelor's & Master's</td>
+													<td>2011-2016</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+								</section>
+								
+							</article>
+							-->
+							
+							
+							
+							
+					
+						
+						<!-- Contact -->
+							<article id="contact">
+								<center><h2 class="major">Contact</h2></center>
+								
+								    							<center class="image main"><img src="images/planets_modified2.webp" alt="Planets by Anneka Tran"  /></center>
+
+								
+								
+								<p> If you have any questions, comments or suggestions regarding my work and publications or would like to collaborate, or want to connect for outreach events, please do get in touch. I’d love to hear from you! </p>
+
+
+								<h3 class="minor">Email</h3>  
+								<p>akashgpt [at] princeton.edu, akashgpt.princeton [at] gmail.com </p>
+
+                                <h3 class="minor">Address</h3>								
+								<p>
+								Peyton Hall, 110<br/>
+								Princeton University<br/>
+								Princeton, NJ 08544, USA.</p>
+		
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/akashgpt/" class="icon fa-linkedin"  style="color:#0077B5;"><span class="label"></span></a></li>
+									<li><a href="https://orcid.org/0000-0002-2006-7769" class="ai ai-orcid" style="color:#A6CE39;"><span class="label"></span></a></li>
+									<li><a href="https://github.com/akashgpt" class="icon fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.researchgate.net/profile/Akash_Gupta15?ev=hdr_xprf&_sg=0HWB0pV_6UXqDRAotRlLGDw6-K-uJj00E4K6NCy2RyBc8sI9fOdHRZNYzghJfc4oWGY8dmdJ6t4KlGSR0izQx3PN" class="ai ai-researchgate-square" style="color:#00d0ad;"><span class="label"></span></a></li>
+									<li><a href="https://scholar.google.com/citations?hl=en&user=_4kW0cgAAAAJ&view_op=list_works&authuser=2" class="ai ai-google-scholar" style="color:#4285F4;"><span class="label"></span></a></li>
+									<li><a href="https://www.goodreads.com/akashgpt" class="fab fa-goodreads" style="color:#f4f1ea;"><span class="label"></span></a></li>
+									<li><a href="https://epss.ucla.edu/people/students/891/" class="fas fa-university" style="color:#2774AE;"><span class="label"></span></a></li>
+<!--								<li><a href="https://epss.ucla.edu/people/students/891/" class="icon fa-university" style="color:#2774AE;"><span class="label"></span></a></li>
+									<li><a href="https://ui.adsabs.harvard.edu/#search/q=orcid%3A0000-0002-2006-7769&sort=date+desc" class="ai ai-ads"><span class="label"></span></a></li>
+									<li><a href="https://arxiv.org/a/gupta_a_8.html" class="ai ai-arxiv"><span class="label"></span></a></li>-->
+<!--								<li><a href="https://www.linkedin.com/in/akashgpt/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://orcid.org/0000-0002-2006-7769" class="ai ai-orcid"><span class="label"></span></a></li>
+									<li><a href="https://www.akashgpt.github.io" class="icon fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://epss.ucla.edu/people/students/891/" class="icon fa-university"><span class="label"></span></a></li>
+									<li><a href="https://www.researchgate.net/profile/Akash_Gupta15?ev=hdr_xprf&_sg=0HWB0pV_6UXqDRAotRlLGDw6-K-uJj00E4K6NCy2RyBc8sI9fOdHRZNYzghJfc4oWGY8dmdJ6t4KlGSR0izQx3PN" class="ai ai-researchgate-square"><span class="label"></span></a></li>
+									<li><a href="https://scholar.google.com/citations?user=_4kW0cgAAAAJ&hl=en" class="ai ai-google-scholar"><span class="label"></span></a></li>
+									<li><a href="https://ui.adsabs.harvard.edu/#search/q=orcid%3A0000-0002-2006-7769&sort=date+desc" class="ai ai-ads"><span class="label"></span></a></li>
+									<li><a href="https://arxiv.org/a/gupta_a_8.html" class="ai ai-arxiv"><span class="label"></span></a></li>-->
+								
+								</ul>
+
+										<br/>
+								<nav>
+							<ul class="actions">
+								<li><a href="#" class="button">Back</a></li>
+							</ul>
+						</nav>
+						
+								
+								<center style="font-size:75%"><font color="#8d8f90">Image Credit: <a href="https://annekatran.tumblr.com/">Anneka Tran</a></font></center>
+						</article>
+
+
+
+
+
+
+
+
+
+						<!-- Elements -->
+							<article id="publications">
+									<center><h2 class="major">Publications</h2></center>
+								<!-- <center class="image main"><img src="images/ALMA_0.gif" alt="ALMA images"  style="width:33%;" /> -->
+																<center class="image main"><img src="images/enceladus_1.webp" alt="ALMA images"  style="width:30%;" />
+
+								<!-- <figcaption style="font-size:75%"></br> Animation showing the ALMA images of 20 protoplanetary disks observed by DSHARP project. Image credit: <a href="https://www.almaobservatory.org/en/images/animation-of-the-20-alma-images-of-dsharp-project/">ALMA (ESO/NAOJ/NRAO), Andrews et al.; N. Lira</a>.</figcaption> -->
+								</center>
+																<!-- <center class="image main"><img src="images/PIA22949.jpg" alt="ALMA images"  style="width:33%;" /></center> -->
+
+<!--										<center class="image main"><img src="images/exoplanet.jpg" alt="exoplanet concept" style="width:50%;" />
+										<figcaption style="font-size:75%"></br>Blue and Bizarre. Artist's impression of the exoplanet HD 189733b. Image credit: <a https://exoplanets.nasa.gov/resources/137/blue-and-bizarre/> NASA, ESA, M. Kornmesser.</a></figcaption></center>
+	-->									
+
+
+
+								<section>
+
+							<li><h3>Peer-Reviewed Publications</h3>
+							</br>
+								<nav>
+
+									<ul class="actions">
+
+										<li><a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-2006-7769&sort=date%20desc%2C%20bibcode%20desc&p_=0" class="button small">NASA ADS</a></li>
+										<li><a href="https://scholar.google.com/citations?hl=en&user=_4kW0cgAAAAJ&view_op=list_works&authuser=2" class="button small">Google Scholar</a></li>
+										<li><a href="https://orcid.org/0000-0002-2006-7769" class="button small">ORCID</a></li>
+										
+									</ul>
+								<!-- </nav> -->
+														<!-- <nav> -->
+</br>
+							<h4>First- and Second-Author</h4>
+
+							<ol>
+								<li>
+									<b>Akash Gupta</b> and Lars Stixrude. 2022. In preparation. </br>
+									<i>Investigating the solubility of hydrogen in water using ab initio molecular dynamics: implications to water-rich planets and exoplanets</i> 
+								</li>
+								</br>	
+								<li>
+									<b>Akash Gupta</b>, Lorraine Nicholson and Hilke E. Schlichting 2022. <i>MNRAS</i>. 516, 4585.
+										[<b><a href="https://ui.adsabs.harvard.edu/abs/2022arXiv220514020G/abstract">ADS</a></b>] [<b><a href="https://arxiv.org/abs/2205.14020">arXiv</a></b>] </br>
+									<i>Properties of the radius valley around low mass stars: Predictions from the core-powered mass-loss mechanism</i> 
+								</li>
+								</br>	
+								<li>
+									James G. Rogers, <b>Akash Gupta</b>, James E. Owen and Hilke E. Schlichting 2021. <i>MNRAS</i>. 508, 5886.
+									[<b><a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.5886R/abstract">ADS</a></b>] [<b><a href="https://arxiv.org/abs/2105.03443">arXiv</a></b>] </br>
+									<i>Photoevaporation Vs. Core-Powered Mass-Loss: Model Comparison with the 3D Radius Gap</i> 
+								</li>
+								</br>	
+								<li>
+									<b>Akash Gupta</b> and Hilke E. Schlichting 2021. <i>MNRAS</i>. 504, 4634.
+										[<b><a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.504.4634G/abstract">ADS</a></b>] [<b><a href="https://arxiv.org/abs/2103.08785">arXiv</a></b>] </br>
+									<i>Caught in the Act: Core-powered Mass-loss Predictions for Observing Atmospheric Escape</i> 
+								</li>
+								</br>	
+								<li>
+									<b>Akash Gupta</b> and Hilke E. Schlichting 2020. <i>MNRAS</i>. 493, 792.
+										[<b><a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.493..792G/abstract">ADS</a></b>] [<b><a href="https://arxiv.org/abs/1907.03732">arXiv</a></b>] </br>
+									<i>Signatures of the core-powered mass-loss mechanism in the exoplanet population: Dependence on stellar properties and observational predictions</i> 
+										</li>
+								</br>	
+								<li>
+									<b>Akash Gupta</b> and Hilke E. Schlichting 2019. <i>MNRAS</i> 487, 24.
+									[<b><a href="https://ui.adsabs.harvard.edu/abs/2019MNRAS.487...24G/abstract">ADS</a></b>] [<b><a href="https://arxiv.org/abs/1811.03202">arXiv</a></b>] </br>
+									<i>Sculpting the valley in the radius distribution of small exoplanets as a by-product of planet formation: The core-powered mass-loss mechanism</i>
+								</li>
+								</br>
+									<li><b>Akash Gupta</b>, Sharvari Nadkarni-Ghosh and Ishan Sharma 2018. <i>Icarus</i> 299, 97.
+									[<b><a href="https://ui.adsabs.harvard.edu/abs/2018Icar..299...97G/abstract">ADS</a></b>][<b><a href="https://arxiv.org/abs/1611.06543">arXiv</a></b>] </br>
+									<i>Rings of non-spherical, axisymmetric bodies</i>
+								</li>
+							</ol>
+						
+						<!-- </br> -->
+						<h4>Others</h4>
+						
+							<ol>
+								<li>
+									James E. Owen, Ruth A. Murray-Clay, Ethan Schreyer, Hilke E. Schlichting, Ardila David, <b>Akash Gupta </b>, R. O. Parke Loyd, Evgenya L. Shkolnik, David K. Sing, Mark R. Swain, 2021. In review.
+									[<b><a href="https://ui.adsabs.harvard.edu/abs/2021arXiv211106094O/abstract">ADS</a></b>] [<b><a href="https://arxiv.org/abs/2111.06094">arXiv</a></b>] </br>
+									<i>The fundamentals of Lyman-alpha exoplanet transits</i>
+								</li>
+								</br>
+								<li>
+									Raissa Estrela, Mark Swain, <b>Akash Gupta</b>, Christophe Sotin and Adriana Valio 2020. <i>ApJ</i>. 898, 104. 
+									[<b><a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...898..104E/abstract">ADS</a></b>] [<b><a href="https://arxiv.org/abs/2001.01299">arXiv</a></b>] </br>
+									<i>Evolutionary track of H/He envelopes of the observed sub-Neptunes and super-Earths</i> 
+								</li>
+								
+								<!--</br>
+								<li>
+								Haolan Tang, <b>Akash Gupta</b>, Hilke E. Schlichting and Edward D. Young 2020. In review.  </br>
+								<i>Escape from a Transient Rock Vapor Atmosphere as the Mechanism for Fractionation of the Moon's Moderately Volatile Elements</i> 
+									</li>
+								</br>
+								</li>-->
+							</ol>
+						
+						
+						
+						</nav>
+
+</li>
+<!-- </br>
+<li><h3>Seminars</h3>
+
+														<nav>
+
+							<ol>
+								<li>								
+									Astronomy Seminar, <i>Carnegie Earth & Planets Laboratory</i> (2021).
+									</li>
+									</br>
+								<li>								
+									Disks and Exoplanets Group Seminar, <i>University of Arizona</i> (2020).
+									</li>
+									</br>
+								<li>								
+									Astronomy Seminar, <i>McMaster University</i> (2020).
+								</li>
+								</br>
+								<li>								
+									Planetary Lunch Seminar, <i>Massachusetts Institute of Technology</i> (2020).
+								</li>
+								</br>
+								<li>
+									Planetary Science Seminar, <i>UCLA </i> (2018, '19).
+								</li>
+									</ol>
+														</nav>
+								</li>
+						</br>
+						<li><h3>Conferences</h3>
+
+							<nav>
+
+							<ol>
+								<li>								
+									<i>Exoplanet Demographics 2020</i>. Online. Talk (2020).
+									</li>
+									</br>
+								<li>	
+									<i>Exoplanets III</i>. Online. Talk (2020).
+									</li>
+									</br>
+								<li>					
+									<i>Bay Area Exoplanet Meeting #33</i>. Online. Talk (2020).
+									</li>
+									</br>
+								<li>								
+									<i>Extreme Solar Systems IV</i>. Reykjavik, Iceland. Poster (2019).
+								</li>
+								</br>
+								<li>
+								<i>NASA Sagan Workshop 2019</i>. Pasadena, CA, US. Poster (2019).
+								</li>
+								</br>
+								<li>
+								<i>New Horizons in Planetary Systems</i>. Victoria, BC, Canada. Talk (2019).
+								</li>
+								</br>
+								<li>
+								<i>Kepler & K2 Science Conference V</i>. Pasadena, CA, US. Poster (2019).
+								</li>
+								</br>
+								<li>
+								<i>11<sup>th</sup> Annual EPSS Student Research Symposium, UCLA</i>. Los Angeles, CA, US. Poster (2018).
+								</li>
+								</br>
+								<li>
+								<i>48<sup>th</sup> DPS Meeting and 11<sup>th</sup> EPSC</i>. Pasadena, CA, US. Poster (2016).
+									</li>
+									</ol>
+														</nav>
+																</li> -->
+
+
+<!-- <center> -->
+										<!-- <a href="https://ui.adsabs.harvard.edu/#search/q=orcid%3A0000-0002-2006-7769&sort=date+desc" class="button">NASA ADS</a><span>&emsp;</span> -->
+										<!-- <a href="https://scholar.google.com/citations?hl=en&user=_4kW0cgAAAAJ&view_op=list_works&authuser=2&sortby=pubdate" class="button">Google Scholar</a><span>&emsp;</span> -->
+										<!-- <a href="https://arxiv.org/a/gupta_a_8.html" class="button">arXiv</a><span>&emsp;</span> -->
+										<!-- <a href="https://orcid.org/0000-0002-2006-7769" class="button ">ORCID</a> -->
+<!-- </center> -->
+								</section>
+								
+																	</br>
+								<nav>
+							<ul class="actions">
+								<li><a href="#" class="button">Back</a></li>
+							</ul>
+							</nav>
+							<!-- <center><a href="#" class="button">Back</a></center> -->
+								
+<!--																<center class="image main"><img src="images/ALMA_3.png" alt="ALMA images"  style="width:75%;" />
+
+								<center style="font-size:70%"><font color="#8d8f90">IMAGE CREDIT: <a href="https://www.almaobservatory.org/en/home/">ALMA</a> images of HL Tau and TW Hya protoplanetary disks.</font></center>
+-->
+								<center style="font-size:75%"><font color="#8d8f90"> Saturn's icy moon Enceladus. Image Credit: <a href="https://solarsystem.nasa.gov/moons/saturn-moons/enceladus/in-depth/">NASA/JPL/Space Science Institute</a></font></center>
+								<!-- <center style="font-size:60%"><font color="#8d8f90"> Blue and Bizarre. Artist's impression of the exoplanet HD 189733b. Image credit: <a https://exoplanets.nasa.gov/resources/137/blue-and-bizarre/> NASA, ESA, M. Kornmesser. </a></font></center> -->
+
+							</article>
+								
+
+<!-- Elements -->
+<article id="media">
+	<center><h2 class="major">Miscellaneous Media</h2></center>
+<!-- <center class="image main"><img src="images/ALMA_0.gif" alt="ALMA images"  style="width:33%;" /> -->
+								<!-- <center class="image main"><img src="images/enceladus_0.jpg" alt="ALMA images"  style="width:30%;" /> -->
+
+<!-- <figcaption style="font-size:75%"></br> Animation showing the ALMA images of 20 protoplanetary disks observed by DSHARP project. Image credit: <a href="https://www.almaobservatory.org/en/images/animation-of-the-20-alma-images-of-dsharp-project/">ALMA (ESO/NAOJ/NRAO), Andrews et al.; N. Lira</a>.</figcaption> -->
+</center>
+
+</br>
+<nav>
+	<section>
+
+		<li><h3>Core-Powered Mass-Loss Mechanism</h3>
+	<ul class="actions">
+
+		<center><li><a href="https://www.youtube.com/watch?v=rV0uBm-8igw&feature=youtu.be" class="button small">Video Presentation</a></li></center>
+	<!--	<center><li><a href="https://drive.google.com/file/d/1NJ3rb0Li_zRJY-pWw6X2_s5U8MOs-Fvs/view?usp=sharing" class="button small">Presentation PDF</a></li></center> -->
+		
+	</ul>
+</section>
+
+</br>
+</br>
+</br>
+<nav>
+<ul class="actions">
+<li><a href="#" class="button">Home</a></li>
+</ul>
+</nav>
+
+</article>
+
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright" style="font-size:50%">&copy; Akash Gupta 2022. Design: <a href="https://html5up.net">HTML5 UP</a>.<br/> Banner Image Credit: NASA/JPL-Caltech/SwRI/MSSS/Roman Tkachenko. URL Icon Credit: <a href="https://www.freepik.com/">Freepik</a> from <a href="https://www.flaticon.com">www.flaticon.com</a></p>
+					</footer>
+
+
+
+
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
